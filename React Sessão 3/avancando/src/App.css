@@ -1,0 +1,16 @@
+.LogoAT {
+  height: 35vh;
+  gap: 2px;
+}
+
+.LogoVL {
+  height: 35vh;
+  gap: 2px;
+}
+
+.App {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}

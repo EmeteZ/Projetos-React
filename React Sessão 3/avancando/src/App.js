@@ -11,6 +11,7 @@ import Container from "./components/Container";
 import ExecuteFunction from "./components/ExecuteFunction";
 import Message from "./components/Message";
 import ChangeMessageState from "./components/ChangeMessageState";
+import UsersDetails from "./components/UsersDetails";
 
 function App() {
   function showMessage() {
@@ -22,6 +23,12 @@ function App() {
   const handleMessage = (msg) => {
     setMessage(msg);
   };
+
+  const user = [
+    { id: 1, nome: "Matheus", idade: 18, profissão: "Corinthiano" },
+    { id: 2, nome: "Robson", idade: 40, profissão: "Empresario" },
+    { id: 3, nome: "Raphael", idade: 10, profissão: "Arquiteto" },
+  ];
 
   return (
     <div className="App">
@@ -42,6 +49,14 @@ function App() {
       <ExecuteFunction myFunction={showMessage} />
       <Message msg={message} />
       <ChangeMessageState handleMessage={handleMessage} />
+      {user.map((user) => (
+        <UsersDetails
+          id={user.id}
+          nome={user.nome}
+          profissão={user.profissão}
+          idade={user.idade}
+        />
+      ))}
     </div>
   );
 }

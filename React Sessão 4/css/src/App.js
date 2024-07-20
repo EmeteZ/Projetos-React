@@ -1,5 +1,6 @@
 import "./App.css";
 import Caixa from "./components/Caixa.js";
+import Title from "./components/Title.js";
 
 function App() {
   const n = 10;
@@ -18,6 +19,8 @@ function App() {
       </h2>
 
       <h2 className={redTitle ? "red-title" : "blue-title"}>TITULO KK</h2>
+
+      <Title />
     </div>
   );
 }

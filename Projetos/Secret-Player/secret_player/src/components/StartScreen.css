@@ -1,0 +1,19 @@
+.Start h1 {
+  font-size: 3.5em;
+}
+
+.Start p {
+  margin-bottom: 2em;
+  color: #60d1b9;
+}
+
+.Titulo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  height: 90px;
+  width: 100px;
+}
